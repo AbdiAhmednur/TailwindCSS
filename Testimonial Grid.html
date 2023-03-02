@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" 
+rel="stylesheet">
+    <link rel="stylesheet" href="./Testimonial Grid.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config  = {
+  content: ['./*.html'],
+  screens: {
+    sm: '480px',
+    md: '768px',
+    lg: '976px',
+    xl: '1440px',
+  },
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Barlow Semi Condensed', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/line-clamp')],
+}
+    </script>
+	<title>Testimonial Grid</title>
+</head>
+<body class="bg-gray-100">
+
+    <!--global container-->
+
+    <div class="container mx-auto mx-w-7xl p-2 md:p-10">
+        <!--Gird container-->
+        <div class=" grid gap-6 grid-cols-1 grid text-white md:grid-cols-4 md:grid-rows-2">
+            <!--box 1-->
+            <div class="relative p-10 rounded-xl bg-purple-700 md: col-span-2">
+                <!--Quotes Image-->
+                <img src="pictures/bg-pattern-quotation.svg" alt="quotes" 
+                class="absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150">
+
+                  <!--Box Header-->
+                  <div class="flex z-10 space-x-4">
+                    <img src="pictures/image-daniel.jpg" alt="Picture of Daniel" 
+                    class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+
+                    <div class="text-sm">
+                        <h4 class="opacity-90">Daniel Clifford</h4>
+                        <p class="opacity-50">Verified Graduate</p>
+                    </div>
+                  </div>
+
+                  <!--large text-->
+                  <p class="relative z-10 mt-6 text-xl">
+                    I received a job offer mid-course, and the subjects. 
+                    The subjects I learned were HTML(Hyper-Text-Markup-language), CSS (Cascading Style Sheet) and 
+                    Javascript with the React framework library. 
+                    I also learned a CSS framework library  Tailwind CSS. Currently if it was not for the company I joined. I honestly feel I got every Penny worth. 
+                  </p>
+
+                  <!--Small text-->
+                  <p class="mt-6 opacity-50">"I was at EMT for many years before I joined the Bootcamp. 
+                    I have been looking to make a transition and I have heard who had an amazing experiance here 
+                    I signed for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+                    The next 12 was the best and most grueling time of life. Since completing the course. 
+                    I have successfully switched careers working as a software Engineer at a VR startup" </p>
+            </div>
+              <!--box 2-->
+              <div class="p-10 rounded-xl bg-blue-600">
+
+                  <!--Box Header-->
+                  <div class="flex space-x-4">
+                    <img src="pictures/image-jonathan.jpg" alt="Picture of Jonathan" 
+                    class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+
+                    <div class="text-sm">
+                        <h4 class="opacity-90">Jonathan Walters</h4>
+                        <p class="opacity-50">Verified Graduate</p>
+                    </div>
+                  </div>
+
+                  <!--large text-->
+                  <p class="mt-6 text-xl">
+                   The team was very supportive and kept me motivated 
+                  </p>
+
+                  <!--Small text-->
+                  <p class="mt-6 opacity-50">"I started as a total newbie with virtually no coding skills. 
+                    I now work as a mobile engineer for a big company. This coding skills I have learnt are skills for life. 
+                    This was one of the best Investments I have ever made in my life." 
+                </p>
+            </div>
+             <!--box 3-->
+             <div class="hidden p-10 rounded-xl text-gray-900 bg-green-500 md:block md:row-span-2">
+
+                <!--Box Header-->
+                <div class="flex space-x-4">
+                  <img src="pictures/image-kira.jpg" alt="Picture of Kira" 
+                  class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+
+                  <div class="text-sm">
+                      <h4 class="opacity-90">Kira Whittle</h4>
+                      <p class="opacity-50">Verified Graduate</p>
+                  </div>
+                </div>
+
+                <!--large text-->
+                <p class="mt-6 text-xl">
+                 Such a life changing experience. Highly recommended!
+                </p>
+
+                <!--Small text-->
+                <p class="mt-6 opacity-50">"Before joining the bootcamp, I have never written a line of code. 
+                    I needed some structure from professional who can help me learn programming step by step. 
+                    I was encouraged to enroll by a former student who can only say wonderful things about the program. The entire curriculum and the staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular was outstanding. It took my learning to the next level in a way that no tutorial could ever have. 
+                    in fact, I have often referred to it during my interviews as an example of my development experience. 
+                    It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommended" </p>
+
+        </div>
+         <!--box 4-->
+         <div class="p-10 rounded-xl text-gray-900 bg-yellow-500">
+
+            <!--Box Header-->
+            <div class="flex space-x-4">
+              <img src="pictures/image-jeanette.jpg" alt="Picture of jeanette" 
+              class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+
+              <div class="text-sm">
+                  <h4 class="opacity-90">jeanette Harmon</h4>
+                  <p class="opacity-50">Verified Graduate</p>
+              </div>
+            </div>
+
+            <!--large text-->
+            <p class="mt-6 text-xl">
+             An Overall wonderful and rewarding experience 
+            </p>
+
+            <!--Small text-->
+            <p class="mt-6 opacity-50">"Thank you for the wonderful experience! 
+            I now have a job I really enjoy, 
+            and make a good living while do something I love" 
+          </p>
+      </div>
+      <!--box 5-->
+      <div class="p-10 rounded-xl text-gray-900 bg-red-600 md:col-span-2">
+
+        <!--Box Header-->
+        <div class="flex space-x-4">
+          <img src="pictures/image-patrick.jpg" alt="Picture of Patrick" 
+          class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+
+          <div class="text-sm">
+              <h4 class="opacity-90">Patrick abrams</h4>
+              <p class="opacity-50">Verified Graduate</p>
+          </div>
+        </div>
+
+        <!--large text-->
+        <p class="mt-6 text-xl">
+         Awesome teaching support from TAs who did the bootcamp themselves. 
+         Getting guidance from them and learning from their experience was easy. 
+        </p>
+
+        <!--Small text-->
+        <p class="mt-6 opacity-50">"the stuff seem genuinely concerned about my progress which I find really refreshing. 
+            The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. 
+            The standard is above the rest. 
+            You will get the personal attention you need from an incredible community of smart and amazing people." 
+      </p>
+  </div>
+ <!--box 6-->
+ <div class="p-10 rounded-xl text-gray-900 bg-green-500 md:hidden">
+
+    <!--Box Header-->
+    <div class="flex space-x-4">
+      <img src="pictures/image-kira.jpg" alt="Picture of Kira" 
+      class="w-10 h-10 rounded-full ring-2 ring-purple-300">
+
+      <div class="text-sm">
+          <h4 class="opacity-90">Kira Whittle</h4>
+          <p class="opacity-50">Verified Graduate</p>
+      </div>
+    </div>
+
+    <!--large text-->
+    <p class="mt-6 text-xl">
+     Such a life changing experience. Highly recommended!
+    </p>
+
+    <!--Small text-->
+    <p class="mt-6 opacity-50">"Before joining the bootcamp, I have never written a line of code. 
+        I needed some structure from professional who can help me learn programming step by step. 
+        I was encouraged to enroll by a former student who can only say wonderful things about the program. The entire curriculum and the staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular was outstanding. It took my learning to the next level in a way that no tutorial could ever have. 
+        in fact, I have often referred to it during my interviews as an example of my development experience. 
+        It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommended" </p>
+
+</div>
+
+</div>
+<br>
+<footer class="bg-blue-700 p-2">
+
+<h1>Testimonial grid</h1>
+<br>
+
+<div class="content text-right">
+    <p class="flex-end">Copyright 2023 Testimonial grid</p>   
+ </div>
+</footer>
+
+
+
+</body>
+</html>
